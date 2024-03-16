@@ -1,0 +1,39 @@
+.landing-page {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.app-header {
+  text-align: center;
+  color: #d61f1f; /* Uchiha red */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.days-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.day-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #d61f1f; /* Uchiha red */
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.day-button:hover {
+  background-color: #222;
+}
+
+.day-button.active {
+  background-color: #d61f1f; /* Uchiha red */
+}

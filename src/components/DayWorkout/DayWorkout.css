@@ -1,0 +1,72 @@
+.app-header {
+  text-align: center;
+  color: #d61f1f; /* Uchiha red */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.workouts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-workout-container {
+  background-color: #1b1b1b; /* Dark gray */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.exercise-container {
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.exercise-container:last-child {
+  border-bottom: none;
+}
+
+.exercise-container h3 {
+  color: #d61f1f; /* Uchiha red */
+}
+
+.exercise-image {
+  width: 350px;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 2rem;
+  border: 5px solid #d61f1f;
+}
+
+.instruction-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.instruction-list li {
+  margin-bottom: 5px;
+}
+
+.complete-button {
+  background-color: #d61f1f; /* Uchiha red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.complete-button:hover {
+  background-color: #8b0000; /* Darker shade of Uchiha red */
+}
+
+.completed-message {
+  color: #32cd32; /* Green */
+  font-weight: bold;
+}
