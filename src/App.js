@@ -1,25 +1,11 @@
-import React, { useState } from "react";
-import LandingPage from "./components/LandingPage/LandingPage";
-import DayWorkout from "./components/DayWorkout/DayWorkout";
-import workoutsData from "./data/workoutsData";
+import React from "react";
 import "./App.css"; // Import CSS file for styles
+import ByDay from "./components/Filters/ByDay/ByDay";
 
 const App = () => {
-  const [selectedDay, setSelectedDay] = useState(null); // State to keep track of the selected day
-
-  const handleDaySelect = (index) => {
-    setSelectedDay(selectedDay === index ? null : index); // Toggle the selected day
-  };
-
   return (
     <div className="app-container">
-      <LandingPage selectedDay={selectedDay} onDaySelect={handleDaySelect} />
-      {selectedDay !== null && (
-        <DayWorkout
-          day={workoutsData[selectedDay].day}
-          exercises={workoutsData[selectedDay].exercises}
-        />
-      )}
+      <ByDay />
     </div>
   );
 };
