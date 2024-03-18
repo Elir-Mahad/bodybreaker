@@ -1,6 +1,6 @@
 .app-header {
   text-align: center;
-  color: #d61f1f; /* Uchiha red */
+  color: #d61f1f;
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -11,12 +11,19 @@
   align-items: center;
 }
 
+/*  */
+
 .day-workout-container {
-  background-color: #1b1b1b; /* Dark gray */
+  background-color: #1b1b1b;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.day-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .exercise-container {
@@ -30,30 +37,48 @@
 }
 
 .exercise-container h3 {
-  color: #d61f1f; /* Uchiha red */
+  color: #d61f1f;
+}
+
+.exercise-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exercise-name {
+  font-size: 20px;
+  margin-top: 0;
 }
 
 .exercise-image {
-  width: 350px;
-  height: 250px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 2rem;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
   border: 5px solid #d61f1f;
 }
 
+.info-container {
+  width: 100%;
+}
+
+.info-container p {
+  margin: 5px 0;
+}
+
 .instruction-list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .instruction-list li {
+  list-style-type: decimal;
   margin-bottom: 5px;
 }
 
 .complete-button {
-  background-color: #d61f1f; /* Uchiha red */
+  background-color: #d61f1f;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -63,10 +88,10 @@
 }
 
 .complete-button:hover {
-  background-color: #8b0000; /* Darker shade of Uchiha red */
+  background-color: #8b0000;
 }
 
 .completed-message {
-  color: #32cd32; /* Green */
+  color: #32cd32;
   font-weight: bold;
 }
